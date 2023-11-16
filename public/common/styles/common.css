@@ -6,10 +6,10 @@
     font-style: normal;
     src: url('fonts/NotoSansKR-Regular.eot');
     src: url('fonts/NotoSansKR-Regular.eot?#iefix') format('embedded-opentype'),
-         url('fonts/NotoSansKR-Regular.woff2') format('woff2'),
-         url('fonts/NotoSansKR-Regular.woff') format('woff'),
-         url('fonts/NotoSansKR-Regular.otf') format('opentype'),
-         local("※");
+        url('fonts/NotoSansKR-Regular.woff2') format('woff2'),
+        url('fonts/NotoSansKR-Regular.woff') format('woff'),
+        url('fonts/NotoSansKR-Regular.otf') format('opentype'),
+        local("※");
     }
     @font-face {
     font-family:'NotoB';
@@ -17,10 +17,10 @@
     font-style: normal;
     src: url('fonts/NotoSansKR-Medium.eot');
     src: url('fonts/NotoSansKR-Medium.eot?#iefix') format('embedded-opentype'),
-         url('fonts/NotoSansKR-Medium.woff2') format('woff2'),
-         url('fonts/NotoSansKR-Medium.woff') format('woff'),
-         url('fonts/NotoSansKR-Medium.otf') format('opentype'),
-         local("※");
+        url('fonts/NotoSansKR-Medium.woff2') format('woff2'),
+        url('fonts/NotoSansKR-Medium.woff') format('woff'),
+        url('fonts/NotoSansKR-Medium.otf') format('opentype'),
+        local("※");
     }
     @font-face {
     font-family:'NsrL';
@@ -28,10 +28,10 @@
     font-style: normal;
     src: url('fonts/NanumSquareRoundR.eot');
     src: url('fonts/NanumSquareRoundR.eot?#iefix') format('embedded-opentype'),
-         url('fonts/NanumSquareRoundR.woff') format('woff'),
-         url('fonts/NanumSquareRoundR.otf') format('opentype'),
-         url('fonts/NanumSquareRoundR.ttf') format('truetype'),
-         local("※");
+        url('fonts/NanumSquareRoundR.woff') format('woff'),
+        url('fonts/NanumSquareRoundR.otf') format('opentype'),
+        rl('fonts/NanumSquareRoundR.ttf') format('truetype'),
+        local("※");
     }
     @font-face {
     font-family:'NsrB';
@@ -39,10 +39,10 @@
     font-style: normal;
     src: url('fonts/NanumSquareRoundB.eot');
     src: url('fonts/NanumSquareRoundB.eot?#iefix') format('embedded-opentype'),
-         url('fonts/NanumSquareRoundB.woff') format('woff'),
-         url('fonts/NanumSquareRoundB.otf') format('opentype'),
-         url('fonts/NanumSquareRoundB.ttf') format('truetype'),
-         local("※");
+        url('fonts/NanumSquareRoundB.woff') format('woff'),
+        url('fonts/NanumSquareRoundB.otf') format('opentype'),
+        url('fonts/NanumSquareRoundB.ttf') format('truetype'),
+        local("※");
     }
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;900&display=swap');
 html, body {width:100%; min-height:100%; height:100%; color:#737373;  font-family: 'NotoL'; font-size: 14px;}
@@ -81,6 +81,8 @@ button:focus{outline: none;}
   margin: 0 auto;
   padding: 0 20px;
 }
+
+/* header */
 .topmenu {
   padding: 5px 0;
 }
@@ -104,4 +106,41 @@ button:focus{outline: none;}
 }
 .system > button:nth-of-type(1)::before {
   display: none;
+}
+
+/* nav */
+nav {
+  padding: 8px 0;
+  background-color: #ff1f3d;
+  position: relative;
+  z-index: 3;
+}
+nav ul {
+  display: flex;
+}
+nav ul > li {
+  flex: 1;
+  text-align: center;
+}
+nav ul > li > button {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+header {
+  position: relative;
+  z-index: 9999;
+}
+header::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 29px;
+  background-color: #b31f28;
+  position: absolute;
+  left: 0;
+  top: 80px;
+  box-shadow: 1px 5px 9px -3px rgb(50 50 50 / 75%);
+  z-index: 2;
 }
