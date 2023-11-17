@@ -274,4 +274,27 @@ footer {
   .footerinfo::before {
     top: 0;
   }
+  .btn-text {
+    width: 33%;
+    margin-bottom: 10px;
+    font-size: 11px;
+  }
+  .btn-gray {
+    min-width: 75px;
+    height: 24px;
+    font-size: 11px;
+  }
+  .btn-text + .btn-gray {
+    margin-left: 0;
+  }
+  .footer-logo img {
+    width: 85px;
+  }
+  .footer-logo {
+    align-self: flex-start;
+    padding-top: 4px;
+  }
+  .footerinfo address span {
+    display: block;
+  }
 }
