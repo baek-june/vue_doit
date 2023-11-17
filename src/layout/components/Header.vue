@@ -8,7 +8,7 @@
           </button>
         </div>
         <div class="system">
-          <button class="login">로그인</button>
+          <button class="login" v-b-modal.login>로그인</button>
           <button class="member">회원가입</button>
         </div>
       </div>
@@ -22,6 +22,9 @@
         </ul>
       </div>
     </nav>
+    <b-modal id="login" title="로그인">
+      <div>로그인 내용</div>
+    </b-modal>
   </header>
 </template>
 

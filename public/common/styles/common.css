@@ -298,3 +298,12 @@ footer {
     display: block;
   }
 }
+
+/* modal */
+.modal-open #appPage {
+  z-index: 9;
+  position: relative;
+}
+.modal-header::after {
+  display: none;
+}
